@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head>
+<title>Connect Image Resizer</title>
+</head>
+<body>
+<a href="/img/a.jpg"><img src="/img/a.jpg?w=100&h=100&t=fill" border=0></a>
+<img src="/img/b.jpg?w=100&h=100&t=sepia" onmouseover="var self = this, old = this.src; this.src = '/img/b.jpg?w=100&h=100&t=fill'; this.onmouseout = function() { self.src = old }">
+<img src="/img/c.jpg?w=100&h=100" onmouseover="var self = this, old = this.src; this.src = '/img/c.jpg?w=150&h=150'; this.onmouseout = function() { self.src = old }">
+</body>
+</html>
