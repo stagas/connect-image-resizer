@@ -1,5 +1,5 @@
 var connect = require('connect')
-  , imageResizer = require('connect-image-resizer')
+  , imageResizer = require('./lib/connect-image-resizer')
 
 var server = connect.createServer(
   imageResizer(__dirname + '/public', {
