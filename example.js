@@ -1,5 +1,5 @@
 var connect = require('connect')
-  , imageResizer = require('./lib/connect-image-resizer')
+  , imageResizer = require('./index.js')
 
 var server = connect.createServer(
   imageResizer(__dirname + '/public', {
@@ -10,7 +10,7 @@ var server = connect.createServer(
         .write(target, finish)
     }
   })
-, connect.staticProvider(__dirname + '/public')
+, connect.static(__dirname + '/public')
 )
 
 server.listen(8080, 'localhost')
