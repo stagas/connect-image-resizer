@@ -1,9 +1,12 @@
 {
   "name": "connect-image-resizer",
   "description": "Image resize on demand middleware for Connect",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "George Stagas <gstagas@gmail.com>",
   "main": "./index.js",
+  "engines": {
+    "node": "~0.8.0"
+  },
   "dependencies": {
     "gm": "~1.3.0"
   }
